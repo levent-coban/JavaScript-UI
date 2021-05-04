@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shoe Store</title>
+<link href="css/normalize.css" rel="stylesheet">   
+<link href="css/custom.css" rel="stylesheet">
+
+<script src="scripts/vue.js"></script>
+
+</head>
+<body>
+
+<header>
+    <h1 id="logo">Shoe Store</h1>
+</header>
+
+<div id="container">
+        
+<div id="shoes">
+    <div v-for = 'product in db_set' class="item-card">
+        <a v-bind:href="product.url">
+        <div class="item-card-inner">
+            <img v-bind:src="'images/' + product.imageurl" v-bind:alt="product.info">
+            <span class="product-name">{{ product.productname }}</span>
+            <span class="price">{{ product.price }}&nbsp;€</span>
+            <span class="color-dot" v-bind:style="'background-color:' + product.color"></span>
+        </div>
+        </a>
+    </div>
+</div>
+
+</div><!-- #container -->
+
+<footer>
+© 2021
+</footer>
+<script src="scripts/shoestore.js"></script>
+</body>
+</html>
