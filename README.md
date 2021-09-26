@@ -3,7 +3,7 @@
 Web UI design & JavaScript Implementations
 
 
-### 1. UI Design & implementation with JavaScript, HTML, CSS
+### 1. UI Design & implementation with JavaScript (Vue), HTML, CSS
 
 ```
 Shoe Store Product Cards
